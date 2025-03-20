@@ -1,0 +1,162 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Font Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0 auto;
+}
+
+
+/* Navigation Bar */
+header {
+    background-color: #2a2a2a;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+   
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo a {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+}
+
+.nav-links a:hover {
+    background-color: #f4a261;
+    border-radius: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+footer p{
+    text-align: center;
+
+}
+
+
+
+.split-left a:hover{
+    color: #cfc493;
+
+  }
+
+
+.comp{
+ padding: 90px 400px 10px 650px;
+}
+
+
+.Character{
+    padding-left: 110px;
+    padding-right: 10px;
+}
+
+h1{
+    text-align: center;
+    background-color: lightgray;
+    padding: 25px;
+}
+
+.Contents{
+    display: flex;
+    padding: auto;
+    text-align: justify;
+}
+
+.split-container {
+    display: flex;
+    width: 100%;
+    height: 95%;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.split-left{
+    flex: 0.3;
+    overflow: hidden;
+    text-align: justify;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding-top: 20px;
+
+}
+
+.split-right {
+    flex: 0.7;
+    overflow: hidden;
+    text-align: justify;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.split-left {
+    background-color: teal;
+    color: #ffffff;
+    border: 2px solid rgb(95, 156, 180);
+
+}
+
+
+.split-right {
+    background-color: #f6f7fa;
+    border: 2px solid grey;
+
+}
+
+
+
+@media (max-width: 768px) {
+    .split-container {
+        flex-direction: column;
+    }
+
+    .split-left{
+        margin: 5px;
+        width: 25%;
+    }
+
+    .split-right {
+        margin: 5px;
+        width: 75%;
+    }
+}
